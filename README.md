@@ -2,5 +2,3 @@
 
 Quansight Github Website
 
-* Hello
-* Mom

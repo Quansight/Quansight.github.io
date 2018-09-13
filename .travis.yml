@@ -3,7 +3,10 @@ python:
 - '3.6'
 
 install:
-- python -m pip install -r requirements.txt
+- pip install -r requirements.txt
+
+script:
+- jupyter nbconvert _notebooks/*.ipynb
 
 
 deploy:
@@ -11,7 +14,9 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
-  target-branch: master # because *.github.io
+  target-branch: testing # master # because *.github.io
   verbose: true
   on:
-    branch: publish
+    branch: notebooks
+
+# Swap the branches out after testing.

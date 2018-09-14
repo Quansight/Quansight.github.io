@@ -29,3 +29,4 @@ deploy:
   target-branch: master # master # because *.github.io
   verbose: true
   all_branches: true
+  committer-from-gh: true

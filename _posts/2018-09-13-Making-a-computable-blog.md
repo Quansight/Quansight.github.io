@@ -1,5 +1,6 @@
 ---
 author: Tony Fast
+layout: post
 modified_date: September 14, 2018
 name: 2018-09-13-Making-a-computable-blog
 path: _notebooks
@@ -16,7 +17,7 @@ path: _notebooks
 
 
 ```python
-    import nbconvert, git, yaml, inspect, yaml
+    import nbconvert, git, yaml, inspect
     from pathlib import Path
     _imports = collect_last_input(-2)
     config = Path('..', 'jupyter_nbconvert_config.py')
@@ -36,6 +37,7 @@ path: _notebooks
             nb, resources = super().from_notebook_node(nb, resources, **kw)
             md = dict(resources['metadata'])
             md['author'] = author_from_repo(Path(md['path'], f"{md['name']}.ipynb"))
+            md['layout'] = 'post'
             return '---\n'.join((
                 '', yaml.safe_dump(md, default_flow_style=False), nb
             )), resources
@@ -52,15 +54,8 @@ path: _notebooks
     try:
         c.NbConvertApp.export_format = f"jupyter_nbconvert_config.FrontMatters"
         c.FilesWriter.build_directory = "_posts"
-    except: ...""")
+    except: ...""");
 ```
-
-
-
-
-    755
-
-
 
 
 ```python
@@ -81,28 +76,4 @@ path: _notebooks
 ```python
     if __name__ == '__main__':
         !ipython -m pytest -- 2018-09-13-Making-a-computable-blog.ipynb
-```
-
-    <IPython.core.display.HTML object>
-    ============================= test session starts =============================
-    platform win32 -- Python 3.6.6, pytest-3.5.1, py-1.5.3, pluggy-0.6.0
-    Matplotlib: 2.2.2
-    Freetype: 2.8.1
-    rootdir: C:\Users\deathbeds\Quansight.github.io\_notebooks, inifile:
-    plugins: xdist-1.22.5, testmon-0.9.12, remotedata-0.2.1, parallel-0.0.2, openfiles-0.3.0, mpl-0.9, localserver-0.4.1, forked-0.2, doctestplus-0.1.3, arraydiff-0.2, hypothesis-3.66.16, importnb-0.5.0
-    collected 2 items
-    
-    2018-09-13-Making-a-computable-blog.ipynb ..                             [100%]
-    
-    ========================== 2 passed in 3.39 seconds ===========================
-
-
-
-```python
-
-```
-
-
-```python
-
 ```

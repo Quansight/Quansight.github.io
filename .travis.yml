@@ -1,0 +1,33 @@
+language: python
+python:
+- '3.6'
+
+install:
+- pip install -r requirements.txt
+
+branches:
+  except:
+  - master
+  only: [] # /^final-.*$/
+
+script:
+# Posts must start with a number to be converted.
+# This is similar to the drafts approach that Jekyll takes
+- jupyter nbconvert _notebooks/20*.ipynb
+# - jupyter nbconvert --execute _notebooks/20*.ipynb
+- pushd _notebooks
+- jupyter nbconvert --to markdown readme.ipynb
+- rm !(20*.ipynb|readme.md)
+- popd
+
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  target-branch: master # master # because *.github.io
+  verbose: true
+  committer-from-gh: true
+  on:
+    all_branches: true

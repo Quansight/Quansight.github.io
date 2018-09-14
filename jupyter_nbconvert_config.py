@@ -1,5 +1,4 @@
-import nbconvert, git, yaml, inspect
-from pathlib import Path
+import nbconvert, git, yaml, inspect; from pathlib import Path
 
 class FrontMatters(nbconvert.exporters.MarkdownExporter):
     def from_notebook_node(self, nb, resources=None, **kw):
@@ -8,8 +7,7 @@ class FrontMatters(nbconvert.exporters.MarkdownExporter):
         md['author'] = author_from_repo(Path(md['path'], f"{md['name']}.ipynb"))
         md['layout'] = 'post'
         return '---\n'.join((
-            '', yaml.safe_dump(md, default_flow_style=False), nb
-        )), resources
+            '', yaml.safe_dump(md, default_flow_style=False), nb)), resources
 
 def author_from_repo(file, dir='.'):
     repo = git.Repo(dir)

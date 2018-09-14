@@ -87,19 +87,23 @@ The components above are combined to create our `configuration` file.
     except: ...""");
 ```
 
+## Travis
+
+The __.travis.yml__ runs `nbconvert` on the ___notebooks__ folder.  After the scripts have completed the [Travis Pages Deployment](https://docs.travis-ci.com/user/deployment/pages/) pushes the changes to __master__ branch that hosts [__http://quansight.github.io/__](http://quansight.github.io/).
+
 ## Tests
 
-Below we test that our `configuration` exports the correct features to 
+Below we test that our `configuration` exports the correct features to convert our notebook to a post.
 
 
 ```python
     def test_author():
-        assert author_from_repo('_notebooks/2018-09-14-Computable-posts-from-quansight.ipynb', dir='..') == 'Tony Fast'
+        assert author_from_repo('_notebooks/2018-09-14-Computable-posts-from-quansight.ipynb', dir='..') in ('Tony Fast', 'tonyfast')
         
     def test_convert():
         from IPython import get_ipython
         import io
-        !source activate p6 && pushd .. && jupyter nbconvert _notebooks/2018-09-14-Computable-posts-from-quansight.ipynb
+        !pushd .. && jupyter nbconvert _notebooks/2018-09-14-Computable-posts-from-quansight.ipynb
         post = Path('../_posts/2018-09-14-Computable-posts-from-quansight.md')
         assert post.exists()
         *_, fm, md = post.read_text().split('---', 2)
@@ -108,8 +112,20 @@ Below we test that our `configuration` exports the correct features to
         assert 'layout' in fm, "The blog post won't show with Jekyll."
 
     if __name__ == '__main__':
-        !source activate p6 && ipython -m pytest -- 2018-09-14-Computable-posts-from-quansight.ipynb
+        !ipython -m pytest -- 2018-09-14-Computable-posts-from-quansight.ipynb
 ```
+
+    ]0;IPython: Quansight.github.io/_notebooks[1m============================= test session starts ==============================[0m
+    platform darwin -- Python 3.6.3, pytest-3.5.0, py-1.5.3, pluggy-0.6.0
+    benchmark: 3.1.1 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)
+    rootdir: /Users/tonyfast/Quansight.github.io/_notebooks, inifile:
+    plugins: xdist-1.22.2, forked-0.2, cov-2.5.1, benchmark-3.1.1, hypothesis-3.56.5, nbval-0.9.1, importnb-0.5.0
+    collected 2 items                                                              [0m
+    
+    2018-09-14-Computable-posts-from-quansight.ipynb ..[36m                      [100%][0m
+    
+    [32m[1m=========================== 2 passed in 2.06 seconds ===========================[0m
+
 
 
 ```python

@@ -7,8 +7,9 @@ install:
 
 branches:
   except:
-  - testing
-  
+  - master
+  only: [] # /^final-.*$/
+
 script:
 # Posts must start with a number to be converted.
 # This is similar to the drafts approach that Jekyll takes
@@ -25,9 +26,5 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
-  target-branch: testing # master # because *.github.io
+  target-branch: master # master # because *.github.io
   verbose: true
-  on:
-    branch: notebooks
-
-# Swap the branches out after testing.

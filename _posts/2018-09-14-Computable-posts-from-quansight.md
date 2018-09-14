@@ -20,9 +20,9 @@ In this notebook, we will build the tools required to convert a notebook to a va
 
 
 ```python
-    def collect_last_input(stop=-1):
-        try: return '\n'.join(In[-1].splitlines()[:stop])
-        except: return 
+def collect_last_input(stop=-1):
+    try: return '\n'.join(In[-1].splitlines()[:stop])
+    except: return 
 ```
 
 ### Dependencies
@@ -33,39 +33,39 @@ In this notebook, we will build the tools required to convert a notebook to a va
 
 
 ```python
-    import nbconvert, git, yaml, inspect; from pathlib import Path
-    _imports = collect_last_input()
+import nbconvert, git, yaml, inspect; from pathlib import Path
+_imports = collect_last_input()
 ```
 
 [__jupyter_nbconvert_config.py__](https://nbconvert.readthedocs.io/en/latest/config_options.html) is a special file name recognized by the `nbconvert` `configuration` system.  A goal of this notebook build the correct configuration file to create our posts.
 
 
 ```python
-    configuration = Path('..', 'jupyter_nbconvert_config.py')
+configuration = Path('..', 'jupyter_nbconvert_config.py')
 ```
 
 `FrontMatters` converts a notebook to Markdown and preprends the `yaml` front matter.
 
 
 ```python
-    class FrontMatters(nbconvert.exporters.MarkdownExporter):
-        def from_notebook_node(self, nb, resources=None, **kw):
-            nb, resources = super().from_notebook_node(nb, resources, **kw)
-            md = dict(resources['metadata'])
-            md['author'] = author_from_repo(Path(md['path'], f"{md['name']}.ipynb"))
-            md['layout'] = 'post'
-            return '---\n'.join((
-                '', yaml.safe_dump(md, default_flow_style=False), nb)), resources
-    _front_matter_source = collect_last_input()
+class FrontMatters(nbconvert.exporters.MarkdownExporter):
+    def from_notebook_node(self, nb, resources=None, **kw):
+        nb, resources = super().from_notebook_node(nb, resources, **kw)
+        md = dict(resources['metadata'])
+        md['author'] = author_from_repo(Path(md['path'], f"{md['name']}.ipynb"))
+        md['layout'] = 'post'
+        return '---\n'.join((
+            '', yaml.safe_dump(md, default_flow_style=False), nb)), resources
+_front_matter_source = collect_last_input()
 ```
 
 `author_from_repo` extracts the authors of a notebook from the `git` revision history.
 
 
 ```python
-    def author_from_repo(file, dir='.'):
-        repo = git.Repo(dir)
-        return repo.blame('HEAD~0', file)[0][0].author.name
+def author_from_repo(file, dir='.'):
+    repo = git.Repo(dir)
+    return repo.blame('HEAD~0', file)[0][0].author.name
 ```
 
 ## Formatting __jupyter_nbconvert_config.py__
@@ -74,15 +74,15 @@ The components above are combined to create our `configuration` file.
 
 
 ```python
-    collect_last_input() and configuration.write_text (F"""{_imports}
+collect_last_input() and configuration.write_text (F"""{_imports}
 
-    {_front_matter_source}
+{_front_matter_source}
 
-    {inspect.getsource(author_from_repo)}
-    try:
-        c.NbConvertApp.export_format = f"jupyter_nbconvert_config.FrontMatters"
-        c.FilesWriter.build_directory = "_posts"
-    except: ...""");
+{inspect.getsource(author_from_repo)}
+try:
+    c.NbConvertApp.export_format = f"jupyter_nbconvert_config.FrontMatters"
+    c.FilesWriter.build_directory = "_posts"
+except: ...""");
 ```
 
 ## Travis
@@ -95,22 +95,22 @@ Below we test that our `configuration` exports the correct features to convert o
 
 
 ```python
-    def test_author():
-        assert author_from_repo('_notebooks/2018-09-14-Computable-posts-from-quansight.ipynb', dir='..') in ('Tony Fast', 'tonyfast')
-        
-    def test_convert():
-        from IPython import get_ipython
-        import io
-        !pushd .. && jupyter nbconvert _notebooks/2018-09-14-Computable-posts-from-quansight.ipynb
-        post = Path('../_posts/2018-09-14-Computable-posts-from-quansight.md')
-        assert post.exists()
-        *_, fm, md = post.read_text().split('---', 2)
-        fm = yaml.safe_load(io.StringIO(fm))
-        assert isinstance(fm, dict)
-        assert 'layout' in fm, "The blog post won't show with Jekyll."
+def test_author():
+    assert author_from_repo('_notebooks/2018-09-14-Computable-posts-from-quansight.ipynb', dir='..') in ('Tony Fast', 'tonyfast')
 
-    if __name__ == '__main__':
-        !ipython -m pytest -- 2018-09-14-Computable-posts-from-quansight.ipynb
+def test_convert():
+    from IPython import get_ipython
+    import io
+    !pushd .. && jupyter nbconvert _notebooks/2018-09-14-Computable-posts-from-quansight.ipynb
+    post = Path('../_posts/2018-09-14-Computable-posts-from-quansight.md')
+    assert post.exists()
+    *_, fm, md = post.read_text().split('---', 2)
+    fm = yaml.safe_load(io.StringIO(fm))
+    assert isinstance(fm, dict)
+    assert 'layout' in fm, "The blog post won't show with Jekyll."
+
+if __name__ == '__main__':
+    !ipython -m pytest -- 2018-09-14-Computable-posts-from-quansight.ipynb
 ```
 
     ]0;IPython: Quansight.github.io/_notebooks[1m============================= test session starts ==============================[0m
@@ -124,13 +124,3 @@ Below we test that our `configuration` exports the correct features to convert o
     
     [32m[1m=========================== 2 passed in 2.06 seconds ===========================[0m
 
-
-
-```python
-
-```
-
-
-```python
-
-```

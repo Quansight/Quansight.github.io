@@ -12,7 +12,7 @@ script:
 # - jupyter nbconvert --execute _notebooks/20*.ipynb
 - pushd _notebooks
 - jupyter nbconvert --to markdown readme.ipynb
-- rm !(20*.ipynb, readme.md)
+- rm !(20*.ipynb|readme.md)
 - popd
 
 

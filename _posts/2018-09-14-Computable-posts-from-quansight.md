@@ -8,8 +8,6 @@ path: _notebooks
 
 At [Quansight](https://www.quansight.com/), we frequently use [Jupyter notebooks](jupyter.org) to communicate our on going contributions to [sustainable open source software](https://www.quansight.com/sos-partnership).  We thought it would be appropriate to compose blog posts with notebooks so they may be read as blog posts with [Jekyll](https://jekyllrb.com) and reused as demos on [Binder](https://mybinder.org/).
 
-# Computable blog posts by [Quansight](https://www.quansight.com/)
-
 ## Convert and deploy notebooks
 
 In this notebook, we will build the tools required to convert a notebook to a valid [Jekyll post](https://jekyllrb.com/docs/posts/).  This process requires:

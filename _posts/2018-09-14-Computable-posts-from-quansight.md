@@ -16,7 +16,7 @@ In this notebook, we will build the tools required to convert a notebook to a va
 2. Prepending [yaml front matter](https://jekyllrb.com/docs/front-matter/) to the markdown.
 3. Setting up the [Travis Pages Deployment](https://docs.travis-ci.com/user/deployment/pages/).
 
-`collect_last_input` is a utility to function to extract pieces of the last code cell that way run.
+`collect_last_input` is a utility to function to extract pieces of the last code cell that was executed.
 
 
 ```python
@@ -37,7 +37,7 @@ import nbconvert, git, yaml, inspect; from pathlib import Path
 _imports = collect_last_input()
 ```
 
-[__jupyter_nbconvert_config.py__](https://nbconvert.readthedocs.io/en/latest/config_options.html) is a special file name recognized by the `nbconvert` `configuration` system.  A goal of this notebook build the correct configuration file to create our posts.
+[__jupyter_nbconvert_config.py__](https://nbconvert.readthedocs.io/en/latest/config_options.html) is a special file name recognized by the `nbconvert` `configuration` system.  A goal of this notebook is to build the correct configuration file to create valid Jekyll posts.
 
 
 ```python

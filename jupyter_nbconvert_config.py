@@ -1,4 +1,4 @@
-import nbconvert, git, yaml, inspect, yaml
+import nbconvert, git, yaml, inspect
 from pathlib import Path
 
 class FrontMatters(nbconvert.exporters.MarkdownExporter):
@@ -6,6 +6,7 @@ class FrontMatters(nbconvert.exporters.MarkdownExporter):
         nb, resources = super().from_notebook_node(nb, resources, **kw)
         md = dict(resources['metadata'])
         md['author'] = author_from_repo(Path(md['path'], f"{md['name']}.ipynb"))
+        md['layout'] = 'post'
         return '---\n'.join((
             '', yaml.safe_dump(md, default_flow_style=False), nb
         )), resources

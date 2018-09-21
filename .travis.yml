@@ -19,7 +19,7 @@ script:
 - jupyter nbconvert --to markdown readme.ipynb
 - rm !(20*.ipynb|readme.md)
 - popd
-
+- rm environment.y*ml
 
 deploy:
   provider: pages

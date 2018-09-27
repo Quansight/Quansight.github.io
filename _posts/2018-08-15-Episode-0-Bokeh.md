@@ -1,3 +1,8 @@
+---
+layout: post
+title: Open Source Directions Episode 2: XND
+---```
+
 This is the webinar that informs the community about what is going on with Open Source Python projects.  Today's project being highlighted is Bokeh.
 
 Tony Fast joins us as a community organizer and open source consultant.

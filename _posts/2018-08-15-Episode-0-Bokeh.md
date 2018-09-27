@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open Source Directions Episode 2: XND
+title: Open Source Directions Episode 0: Bokeh
 ---```
 
 ### Introductions

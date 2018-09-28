@@ -54,6 +54,7 @@ Now we will have Saul give a demo of XND.  To view the notebook from which the d
 Now we will move on to the XND project roadmap and Travis and Noah will give us some additional insights about the roadmap items.  These items are points which can be supported by time contributions and donations.  To view the roadmap yourself, you can find it here: www.quansight.com/projects 
 
 1. GPU support
+
 So David Brochart had been working on the GPU integration so that has some preliminary work done.  It is a prototype of one approach, and now we are just trying to figure out where to go from here.  These would be basic GPU support kernels.  This is for when you have your data on the GPU and you want your computations to be there as well.  Some questions are, what is the IPC and how do we navigate that.  
 
 2. Lapack and MKL Kernels and Kernel Generators

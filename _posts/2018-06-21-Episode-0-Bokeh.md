@@ -29,7 +29,7 @@ to a web application backed by Python code.
 
 Some alternatives for this project are matplotlib, altair, or bqplot. However,
 none of these quite have the same feature set. Holoviews and Altair are probably
-the closest alternatives. In general, visulatization issomewhat of a crowded space.
+the closest alternatives. In general, visulatization is somewhat of a crowded space.
 
 Initially, Bokeh was built on pure Javascript and it was eventually ported to
 typescript. It was then ported to coffeescript and the translation ended up being

@@ -3,6 +3,8 @@ layout: post
 title: Episode 4 - PyViz - Open Source Directions
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hOIHmi7qxfM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Introductions
 
 Welcome to Open Source Directions, the webinar that informs you about the future of open source projects.

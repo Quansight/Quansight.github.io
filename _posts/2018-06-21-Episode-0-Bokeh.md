@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open Source Directions Episode 0: Bokeh
+title: Episode 0 - Bokeh - Open Source Directions
 ---
 
 ### Introductions

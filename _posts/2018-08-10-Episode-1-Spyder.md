@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open Source Directions Episode 1: Spyder
+title: Episode 1 - Spyder - Open Source Directions
 ---
 
 ### Introduction
@@ -14,17 +14,17 @@ This is the webinar that informs the community about what is going on with Open 
 
 ### Project Overview
 
-Spyder is an open source scientific computing IDE. It has approximately 3400 stars on github, it has over 100 contributors, and about 40-50 PRs per month. On its user base there are around 30000 downloads per month on PypI, and about 200 issues per month opened. 
+Spyder is an open source scientific computing IDE. It has approximately 3400 stars on github, it has over 100 contributors, and about 40-50 PRs per month. On its user base there are around 30000 downloads per month on PypI, and about 200 issues per month opened.
 
 A fellow named Pierre started this project, because he wanted an IDE similar to Matlab for his co-workers.  At that time he worked at the Commission of Atomic Energy in France as a physicist. Spyder came out of a previous project that he had put together called PyD, and then with that as a basis he started Spyder in 2009.  Carlos came on board in 2010 and helped create some bug fixes and other features.  He had to quickly learn in 2015 how to maintain a Python project because Pierre got a promotion at the laboratory and wanted Carlos to take over the project continuation.
 
-Spyder is a desktop application, and these days that is kind of rare.  Having it desktop, rather than web based, allows for the creation a richer application.  One example of this is the fact that at the moment Spyder has about 17 difforent plugins that are able to work while being integrated together. If you were to look at how many packages the Spyder team has collected over time, you would see that there are currently up to 88 plugins.  This is Spyder can be called a true IDE, because it has truly tried to be made into a fully integrated experience.  The hope is that users will never need to leave the IDE to complete a different part of their scientific Python project.  
+Spyder is a desktop application, and these days that is kind of rare.  Having it desktop, rather than web based, allows for the creation a richer application.  One example of this is the fact that at the moment Spyder has about 17 difforent plugins that are able to work while being integrated together. If you were to look at how many packages the Spyder team has collected over time, you would see that there are currently up to 88 plugins.  This is Spyder can be called a true IDE, because it has truly tried to be made into a fully integrated experience.  The hope is that users will never need to leave the IDE to complete a different part of their scientific Python project.
 
-There are a few alternative projects out there for instance Pyzo; which was developed by Omar who worked with Carlos at Anaconda and now he is a freelancer.  This project was the main competitor at one point, but now Omar is also trying to create an IDE/framework which they are calling Flex.  Flex would be a web based IDE though, so really Spyder is kind of the only ones in this category.  Although it is not Python based, R Studio is probably the closest equivalent out there.  
+There are a few alternative projects out there for instance Pyzo; which was developed by Omar who worked with Carlos at Anaconda and now he is a freelancer.  This project was the main competitor at one point, but now Omar is also trying to create an IDE/framework which they are calling Flex.  Flex would be a web based IDE though, so really Spyder is kind of the only ones in this category.  Although it is not Python based, R Studio is probably the closest equivalent out there.
 
-Spyder is built on PyQt, and that was the main reason that Carlos joined the work.  He really didn't like using JavaScript so this was a great alternative.  It started with PyQt 4, and Carlos migrated it to PyQt 5 for the Spyder 3 release.  This was a huge migration because PyQt 4 had such a different callback system, they went more Pythonic and this required the to convert all the code.  
+Spyder is built on PyQt, and that was the main reason that Carlos joined the work.  He really didn't like using JavaScript so this was a great alternative.  It started with PyQt 4, and Carlos migrated it to PyQt 5 for the Spyder 3 release.  This was a huge migration because PyQt 4 had such a different callback system, they went more Pythonic and this required the to convert all the code.
 
-The project started with Pierre, but Carlos was the first contributor. He had used Mathematica for several years and really liked the documentation center that it had.  Because of this he wanted something similar for Python.  Pierre was helping, but so far his work could only show doc streams in plain text format.  Carlos began looking for something to convert doc streams to html automatically.  He found PyQt to be good since it had a web widget which was capable of rendering the html to show to users as a web page.  He found a very small snippet of code in the Sage project which did the same thing, so he cleaned it up and sent it to Pierre.  That was essentially the first contribution to the project.  
+The project started with Pierre, but Carlos was the first contributor. He had used Mathematica for several years and really liked the documentation center that it had.  Because of this he wanted something similar for Python.  Pierre was helping, but so far his work could only show doc streams in plain text format.  Carlos began looking for something to convert doc streams to html automatically.  He found PyQt to be good since it had a web widget which was capable of rendering the html to show to users as a web page.  He found a very small snippet of code in the Sage project which did the same thing, so he cleaned it up and sent it to Pierre.  That was essentially the first contribution to the project.
 
 ### Demo
 
@@ -36,7 +36,7 @@ You can find the information from the demo on the [Spyder website here](https://
 
 2. **New debugging kernel and UI** This has been a request from many users, but would require a dedicated kernel to support the capability that people are asking for.  If completed, this would give users total control of execution, the ability to interact with variables, run arbitrary code and visualize the data at every step.  Doing this would also enable a new debugger panel to monitor the program flow and set breakpoints.
 
-3. **Major enhancements to projects** Spyder has a projects feature, and it is limited to a current session for the most part and a current directory management.  The goal would be to integrate that with some additional best practice workflow tools and center that on reproducible environments.  You could then specify things like your Conda environment or Pip environment.  Specifically this could link things like Venf and Conda and other tools to make the projects notion a little more reproducible. 
+3. **Major enhancements to projects** Spyder has a projects feature, and it is limited to a current session for the most part and a current directory management.  The goal would be to integrate that with some additional best practice workflow tools and center that on reproducible environments.  You could then specify things like your Conda environment or Pip environment.  Specifically this could link things like Venf and Conda and other tools to make the projects notion a little more reproducible.
 
 4. **Third Party Plugins** There are currently many plugins, but there is still a desire to have more.  This would also imply the improvement of existing plugins.  You need this maintenance feature to ensure backwards compatibility etc.
 
@@ -48,15 +48,15 @@ You can find the information from the demo on the [Spyder website here](https://
 
 Now we will move into the question and answer session.
 
-**Q.** How is the connection with Github, is there any, or is it planned? 
+**Q.** How is the connection with Github, is there any, or is it planned?
 
-**A.** We do not currently have a way to handle git projects, or to push to github directly.  It is on our to-do list though, and hope to be able to do that next year.  Currently the licensing issues are in the way.  
+**A.** We do not currently have a way to handle git projects, or to push to github directly.  It is on our to-do list though, and hope to be able to do that next year.  Currently the licensing issues are in the way.
 
 ---
 
 **Q.** Why did you discontinue the terminal window?
 
-**A.** You actually can still execute in an external terminal, we do not have support for Mac, but it does work on Linux and Windows.  
+**A.** You actually can still execute in an external terminal, we do not have support for Mac, but it does work on Linux and Windows.
 
 ---
 
@@ -74,7 +74,7 @@ Now we will move into the question and answer session.
 
 **Q.** Is there a way to suppress the output for telling me what step I am on?
 
-**A.** That is more of a Python thing, but we are trying to develop a new debugging kernel that should improve the debugging experience.  
+**A.** That is more of a Python thing, but we are trying to develop a new debugging kernel that should improve the debugging experience.
 
 ---
 
@@ -84,9 +84,9 @@ Now we will move into the question and answer session.
 
 ---
 
-**Q.** Has testing been performed with Tensorflow or Keras with deep neural nets (maybe a depth of 200)? 
+**Q.** Has testing been performed with Tensorflow or Keras with deep neural nets (maybe a depth of 200)?
 
-**A.** No, we have not performed testing with those, but if your code works in Jupyter Notebook then it should work in Spyder because we use the same kernels and protocols. 
+**A.** No, we have not performed testing with those, but if your code works in Jupyter Notebook then it should work in Spyder because we use the same kernels and protocols.
 
 ### Footnotes & Links
 

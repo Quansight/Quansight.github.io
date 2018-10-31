@@ -14,7 +14,7 @@ This is the webinar that informs the community about what is going on with Open 
 
 ### Project Overview
 
-Spyder is an open source scientific computing IDE. It has approximately 3400 stars on github, it has over 100 contributors, and about 40-50 PRs per month. On its user base there are around 30000 downloads per month on PypI, and about 200 issues per month opened.
+Spyder is an open source scientific computing IDE. It has approximately 3400 stars on github, it has over 100 contributors, and about 40-50 PRs per month. On its user base there are around 30000 downloads per month on PyPI, and about 200 issues per month opened.
 
 A fellow named Pierre started this project, because he wanted an IDE similar to Matlab for his co-workers.  At that time he worked at the Commission of Atomic Energy in France as a physicist. Spyder came out of a previous project that he had put together called PyD, and then with that as a basis he started Spyder in 2009.  Carlos came on board in 2010 and helped create some bug fixes and other features.  He had to quickly learn in 2015 how to maintain a Python project because Pierre got a promotion at the laboratory and wanted Carlos to take over the project continuation.
 

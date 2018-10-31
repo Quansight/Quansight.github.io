@@ -51,8 +51,9 @@ These items are things that you can help out with.  By helping contribute to the
 
 Now we will move on and open it up to user questions.  
 
-Q. How would you compare XND to the buffer protocol and Ctypes?
-The buffer protocol was actually one of the answers to solving the split with Numarray and Merrick.  One potential answer was NumPy, and the other was enhance the buffer protocol, we took both of these routes as a fix it twice concept.  What we are trying to achieve with XND is to make the buffer protocol cross language.  In some sense this is taking the buffer protocol and spreading it across the computer science ecosystem.  For Ctypes it would be nice to have a translator between a Ctypes description and an XND.  It would be great to seen an NDtypes grow a few more, that is not currently on the roadmap but would be beneficial.  
+**Q.** How would you compare XND to the buffer protocol and Ctypes?
+
+**A.** The buffer protocol was actually one of the answers to solving the split with Numarray and Merrick.  One potential answer was NumPy, and the other was enhance the buffer protocol, we took both of these routes as a fix it twice concept.  What we are trying to achieve with XND is to make the buffer protocol cross language.  In some sense this is taking the buffer protocol and spreading it across the computer science ecosystem.  For Ctypes it would be nice to have a translator between a Ctypes description and an XND.  It would be great to seen an NDtypes grow a few more, that is not currently on the roadmap but would be beneficial.  
 
 There is a gitter channel where you can post your additional [questions about XND here] (http://www.github.com/plures/xnd)
 This project really need users and developers so that it can be developed to the needs of people that have these sorts of problems.  

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open Source Directions Episode 4: PyViz
+title: Episode 4 - PyViz - Open Source Directions
 ---
 
 ### Introductions
@@ -16,7 +16,7 @@ This episode, the project being highlighted is [PyViz](http://pyviz.org/)
 
 PyViz was started because Python has many, many tools for data visualization, yet users still find it very hard to get their work done, and most are just bewildered by all the different options available. The result of this is that people choose whatever their buddy is using, tying their code into knots trying to make that library solve their specific problems. Or they give up and use a non-Python tool.  PyViz tries to make sense of all this, guiding users to the right tools for their problems.  The focus is on big and small data, in web browsers, in and out of notebooks, visualized faithfully and accurately.
 
-Sympy provides an environment where many viz tools can easily be installed.
+PyViz provides an environment where many viz tools can easily be installed.
 It gives an overview and tutorial that cuts across multiple projects so that you can see how to use them individually and put them together for real tasks helping to make each project work well with the others where appropriate.  We also add higher-level tools that make others easier to use or more powerful and show users how to handle even very large datasets in a web browser tab.
 
 As far as alternatives go, each Python viz tool is maintained by its own separate developer.  There are some that build on other tools (e.g. Seaborn on top of Matplotlib), but there are no other initiatives that try to make sense of a big set of different projects.
@@ -55,13 +55,13 @@ You can find the [roadmap here](www.quansight.com/projects)
 
 **Q.** Note - I have not used PyViz heavily as I mostly use Altair, how stable is the syntax one sees on the pyviz.org site. For example, I see lost of cell magics with opts and others use it as a variable etc.. (again I have not used this library heavily - just wondering how much churn is going on)
 
-**A.** So for the magics question we found them to be helpful for our own purposes because they tap complete in our Jupyter Notebook.  On balance we decided they were more confusion than they were worth so we were gradually trying to remove them.  We simply have a lot of material and it takes a long time to remove things so at this point there is no reason to use cell magics because there is a pure Python equivalent for everything.  We will eventually steer most users to just do it that way because the feedback indicated that magics was too confusing at first.  To answer the other question, the PyViz ecosystem is a broad community of recent immigrants and some people who have been with it a long time.  The matplotlib portion of it is not moving very quickly because it is already solid and stable, the Bokeh portion is less stable but quite comparably stable, HoloViews is quite stable, Pannel has not quite been released yet but it is based on projects that have been around for a very long time and we realized that we could do this in a very general way.  Datashadar’s API changes very slowly and just kind of sits there and works so it varies per project.  
+**A.** So for the magics question we found them to be helpful for our own purposes because they tap complete in our Jupyter Notebook.  On balance we decided they were more confusion than they were worth so we were gradually trying to remove them.  We simply have a lot of material and it takes a long time to remove things so at this point there is no reason to use cell magics because there is a pure Python equivalent for everything.  We will eventually steer most users to just do it that way because the feedback indicated that magics was too confusing at first.  To answer the other question, the PyViz ecosystem is a broad community of recent immigrants and some people who have been with it a long time.  The matplotlib portion of it is not moving very quickly because it is already solid and stable, the Bokeh portion is less stable but quite comparably stable, HoloViews is quite stable, Pannel has not quite been released yet but it is based on projects that have been around for a very long time and we realized that we could do this in a very general way.  Datashadar’s API changes very slowly and just kind of sits there and works so it varies per project.
 
 ---
 
 **Q.** If I'm the author of a visualization tool, how would I make sure my tool can be integrated into the PyViz stack. What are the hooks for outside contributors to participate?
 
-**A.** The first thing is that Panel will probably already support it, so if you just put up a Panel and you use Panel.row then you will see what happens.  The worst case will be that a screen representation of the object is displayed, but if your object can display HTML, PNG, Latec or any such thing then it should just work.  If it does not work then you can add those methods to your object.  This process does not require any changes to PyViz or Panel.  For deeper things like HoloViews, it supports matplotlib, Bokeh, and the 3D aspects of Plotly.  
+**A.** The first thing is that Panel will probably already support it, so if you just put up a Panel and you use Panel.row then you will see what happens.  The worst case will be that a screen representation of the object is displayed, but if your object can display HTML, PNG, Latec or any such thing then it should just work.  If it does not work then you can add those methods to your object.  This process does not require any changes to PyViz or Panel.  For deeper things like HoloViews, it supports matplotlib, Bokeh, and the 3D aspects of Plotly.
 
 ---
 
@@ -85,11 +85,11 @@ You can find the [roadmap here](www.quansight.com/projects)
 
 **Q.** What is the best way for those who are new to PyViz to get started?
 
-**A.** Go to pyviz.org and follow the instructions.  
+**A.** Go to pyviz.org and follow the instructions.
 
 ### Footnotes & Links
 
-* You can find [the current PyViz roadmap here.](www.quansight.com/projects)
+* You can find [the current PyViz roadmap here.](https://www.quansight.com/projects)
 * [PyViz Website](http://pyviz.org/)
 * [GitHub page](https://github.com/pyviz/pyviz)
 

@@ -3,16 +3,18 @@ layout: post
 title: Episode 1 - Spyder - Open Source Directions
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vtLdH4VbACA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ### Introduction
 
 This is the webinar that informs the community about what is going on with Open Source Python projects.  Today's project being highlighted is Spyder.
 
-
 * **Host:** Anthony Scopatz
 * **Co-Host:** David Charboneau, he is the leader of open team development at Quansight.
 * **Guest:** Carlos Cordoba, lead developer of Spyder. He joined Quansight just a couple months ago and is based out of Bogota, Colombia.
+
+<div "text-align:center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vtLdH4VbACA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 
 ### Project Overview
 

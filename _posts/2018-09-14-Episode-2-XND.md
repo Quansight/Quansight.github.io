@@ -6,7 +6,7 @@ title: Open Source Directions Episode 2: XND
 ### Introductions
 
 Welcome to Open Source Directions, the webinar that informs you about the future of open source projects.
-This episode, the project being highlighted is [XND] www.xnd.io
+This episode, the project being highlighted is [XND] (http://www.xnd.io)
 
 
 * **Host:** Anthony Scopatz
@@ -29,7 +29,7 @@ The original idea was to have lots of other supported languages, but XND is stil
 
 ### Demo
 
-To view the notebook from which the demo was given, visit the [XND homepage] www.xnd.io 
+To view the notebook from which the demo was given, visit the [XND homepage] (http://www.xnd.io)
 
 ### Roadmap Items
 
@@ -54,9 +54,9 @@ Now we will move on and open it up to user questions.
 Q. How would you compare XND to the buffer protocol and Ctypes?
 The buffer protocol was actually one of the answers to solving the split with Numarray and Merrick.  One potential answer was NumPy, and the other was enhance the buffer protocol, we took both of these routes as a fix it twice concept.  What we are trying to achieve with XND is to make the buffer protocol cross language.  In some sense this is taking the buffer protocol and spreading it across the computer science ecosystem.  For Ctypes it would be nice to have a translator between a Ctypes description and an XND.  It would be great to seen an NDtypes grow a few more, that is not currently on the roadmap but would be beneficial.  
 
-There is a gitter channel where you can post your additional [questions about XND here] github.com/plures/xnd
+There is a gitter channel where you can post your additional [questions about XND here] (http://www.github.com/plures/xnd)
 This project really need users and developers so that it can be developed to the needs of people that have these sorts of problems.  
 
 ### Footnotes & Links
 
-* Thanks for watching and listening, you can find us on Twitter @quansightai and if you are interested in supporting a project, you can find all of [our roadmaps here] www.quansight.com/projects 
+* Thanks for watching and listening, you can find us on Twitter @quansightai and if you are interested in supporting a project, you can find all of [our roadmaps here] (http://www.quansight.com/projects)

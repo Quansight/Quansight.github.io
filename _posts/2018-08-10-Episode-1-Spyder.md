@@ -54,43 +54,42 @@ Now we will move into the question and answer session.
 
 ---
 
-Q. Why did you discontinue the terminal window?
+**Q.** Why did you discontinue the terminal window?
 
-A. You actually can still execute in an external terminal, we do not have support for Mac, but it does work on Linux and Windows.  
-
----
-
-Q. How can you import/export custom preferences for Spyder?
-
-A. That option is not yet available for Spyder, but we may include that in version 4 or 4.1.
+**A.** You actually can still execute in an external terminal, we do not have support for Mac, but it does work on Linux and Windows.  
 
 ---
 
-Q. What is the current contributor base?
+**Q.** How can you import/export custom preferences for Spyder?
 
-A. There are currently about 5 contributors, and they have been active in the last year.
-
----
-
-Q. Is there a way to suppress the output for telling me what step I am on?
-
-A. That is more of a Python thing, but we are trying to develop a new debugging kernel that should improve the debugging experience.  
+**A.** That option is not yet available for Spyder, but we may include that in version 4 or 4.1.
 
 ---
 
-Q. How do you find time to do open source projects between the full time job and personal life?
+**Q.** What is the current contributor base?
 
-A. So I am actually working part time with Quansight, and without their support the project might not be able to survive.  As for personal life, I don’t have a personal life so in other words github is my social life.
+**A.** There are currently about 5 contributors, and they have been active in the last year.
 
 ---
 
-Q. Has testing been performed with Tensorflow or Keras with deep neural nets (maybe a depth of 200)? 
+**Q.** Is there a way to suppress the output for telling me what step I am on?
 
-A. No, we have not performed testing with those, but if your code works in Jupyter Notebook then it should work in Spyder because we use the same kernels and protocols. 
+**A.** That is more of a Python thing, but we are trying to develop a new debugging kernel that should improve the debugging experience.  
+
+---
+
+**Q.** How do you find time to do open source projects between the full time job and personal life?
+
+**A.** So I am actually working part time with Quansight, and without their support the project might not be able to survive.  As for personal life, I don’t have a personal life so in other words github is my social life.
+
+---
+
+**Q.** Has testing been performed with Tensorflow or Keras with deep neural nets (maybe a depth of 200)? 
+
+**A.** No, we have not performed testing with those, but if your code works in Jupyter Notebook then it should work in Spyder because we use the same kernels and protocols. 
 
 ### Footnotes & Links
 
 * For us to have a sustainable model to promote this and other projects, it is a great help to have time or finances contributed to supporting projects like Spyder.
-* To see the current roadmap visit [Quanisight's website] www.quansight.com/projects
-* [Spyder’s new website] www.spyder-ide.org 
-* Thanks for watching, and you can find the [Spyder roadmap here] www.quansight.com/projects 
+* To see the current roadmap visit [Quanisight's website](https://quansight.com/projects)
+* [Spyder’s new website](https://www.spyder-ide.org)

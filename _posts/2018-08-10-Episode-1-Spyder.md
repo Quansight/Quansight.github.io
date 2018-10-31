@@ -28,11 +28,11 @@ The project started with Pierre, but Carlos was the first contributor. He had us
 
 ### Demo
 
-You can find the information from the demo on the [Spyder website here] www.spyder-ide.org
+You can find the information from the demo on the [Spyder website here](https://www.spyder-ide.org/).
 
 ### Roadmap
 
-1. **Language server protocol integration** This is a protocol developed by Microsoft and is very similar to the Jupyter protocol because these languages are agnostic. It is used by various tools such as VScode and Atom and other editors.  We do have the initial framework in place for this and we are preparing to release this feature with the beta V. 2.
+1. **Language server protocol integration** This is a protocol developed by Microsoft and is very similar to the Jupyter protocol because these languages are agnostic. It is used by various tools such as VScode and Atom and other editors.  We do have the initial framework in place for this and we are preparing to release this feature with the beta V2.
 
 2. **New debugging kernel and UI** This has been a request from many users, but would require a dedicated kernel to support the capability that people are asking for.  If completed, this would give users total control of execution, the ability to interact with variables, run arbitrary code and visualize the data at every step.  Doing this would also enable a new debugger panel to monitor the program flow and set breakpoints.
 
@@ -48,7 +48,7 @@ You can find the information from the demo on the [Spyder website here] www.spyd
 
 Now we will move into the question and answer session.
 
-**Q.** The first question is; how is the connection with Github, is there any, or is it planned? 
+**Q.** How is the connection with Github, is there any, or is it planned? 
 
 **A.** We do not currently have a way to handle git projects, or to push to github directly.  It is on our to-do list though, and hope to be able to do that next year.  Currently the licensing issues are in the way.  
 

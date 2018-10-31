@@ -70,17 +70,17 @@ You can find the [roadmap here](www.quansight.com/projects)
 
 1. **The assumptions system:**  The assumptions system handles how SymPy makes assumptions on expressions and does logical inference and simplification based on those assumptions (for instance, assuming an expression is "positive" or "integer"). The SymPy assumptions system currently is inconsistent, as there is a "new" system and an "old" system that need to be properly merged. However, because assumptions affect every part of the codebase, this is a challenging task.  This could be a 6 month to a year project, so we could really use some contributions or funding for this.
 
-So is the idea here then that the old system would go away, or are there different use cases for this?
+   So is the idea here then that the old system would go away, or are there different use cases for this?
 
-We have had an evolving view on this as they develop.  The current view is that the best outcome would be for them to merge in such a way that they can both understand each other.  We would want both syntaxes to remain, and right now this new assumptions is using completely different code than what the old assumptions is using.  If we were to pursue this, there would be a lot of duplication work.  There has been some effort put forth to make it so that the new assumptions can read the old assumptions but not the other way around.
+   We have had an evolving view on this as they develop.  The current view is that the best outcome would be for them to merge in such a way that they can both understand each other.  We would want both syntaxes to remain, and right now this new assumptions is using completely different code than what the old assumptions is using.  If we were to pursue this, there would be a lot of duplication work.  There has been some effort put forth to make it so that the new assumptions can read the old assumptions but not the other way around.
 
-It looks like in both of these cases you build up a set of assumptions that apply across a number of expressions, but is there a way to try and evaluate within different sets of assumptions?
+   It looks like in both of these cases you build up a set of assumptions that apply across a number of expressions, but is there a way to try and evaluate within different sets of assumptions?
 
-Another difference with these new assumptions is that the assumptions are separate from the symbol.  With the old way, the assumptions were on the symbol itself.  Something that is possible with the new assumptions is that is easier is deduction.
+   Another difference with these new assumptions is that the assumptions are separate from the symbol.  With the old way, the assumptions were on the symbol itself.  Something that is possible with the new assumptions is that is easier is deduction.
 
 2. **Code Generation:** basically this is taking Sumpy expressions and generating C or Fortran or whatever language you want from that expression.   You start with a high level of representation of the expression and work this in Sympy then you use code generation to work down to the numeric code.  Basically, the idea here is to make that pipeline as seamless as possible.  Right now this requires a lot of work to be done in between, and ideally, Sympy could get to the point where it only requires a high-level input.
 
-You can also make mathematical optimizations because Sympy knows your expressions and it can make optimizations that are potentially smarter than a compiler would be able to do because compilers are limited.  This goes beyond common subexpression eliminations, one example would be the simplification function.
+   You can also make mathematical optimizations because Sympy knows your expressions and it can make optimizations that are potentially smarter than a compiler would be able to do because compilers are limited.  This goes beyond common subexpression eliminations, one example would be the simplification function.
 
 3. **Performance:** Sympy is written entirely in Python, so sometimes that can make it slower than desired and this roadmap item is about finding ways to improve performance to overcome that. There are many different avenues to approach this issue, one is benchmarking and profiling to find inefficiency.  Another optimization technique would be to develop more efficient algorithms. There is also a Simengine project that is a very fast symbolic core library written in C++ and the idea here would be that the core engine of Sympy could be swapped out for Simengine.
 

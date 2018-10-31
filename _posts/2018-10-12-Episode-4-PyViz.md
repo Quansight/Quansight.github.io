@@ -6,7 +6,7 @@ title: Open Source Directions Episode 4: PyViz
 ### Introductions
 
 Welcome to Open Source Directions, the webinar that informs you about the future of open source projects.
-This episode, the project being highlighted is [PyViz] (http://pyviz.org/)
+This episode, the project being highlighted is [PyViz](http://pyviz.org/)
 
 * **Host:** Anthony Scopatz
 * **Co-Host:** David Charboneau
@@ -32,16 +32,16 @@ Users come from a huge range of industry, academic, and government positions, ac
 ### Demo
 
 Follow instructions at pyviz.org to install, then:
-[Interact:] (https://anaconda.org/jbednar/datashadercliffordinteract): Turn a Jupyter notebook into a deployable app with one line of code
-[Attractors:] (https://anaconda.org/jbednar/datashaderattractors) Build a complex dashboard directly in a notebook and go back and forth
-[Gapminders:] (https://anaconda.org/jbednar/panel_gapminders) Use Matplotlib, Plotly, bokeh, Altair, R ggplot2 -- whatever you like!
-[hvPlot:] (https://hvplot.pyviz.org/) Interactive Pandas plots for free!
-[See] (PyViz.org) for much, much more.
+[Interact:](https://anaconda.org/jbednar/datashadercliffordinteract): Turn a Jupyter notebook into a deployable app with one line of code
+[Attractors:](https://anaconda.org/jbednar/datashaderattractors) Build a complex dashboard directly in a notebook and go back and forth
+[Gapminders:](https://anaconda.org/jbednar/panel_gapminders) Use Matplotlib, Plotly, bokeh, Altair, R ggplot2 -- whatever you like!
+[hvPlot:](https://hvplot.pyviz.org/) Interactive Pandas plots for free!
+[See PyViz.org](PyViz.org) for much, much more.
 
 
 ### Roadmap Items
 
-You can find the [roadmap here] (www.quansight.com/projects)
+You can find the [roadmap here](www.quansight.com/projects)
 
 1. **Better integration with other tools:**  PyViz doesn’t yet cover everything in Python viz; e.g. there is relatively little integration of 3D viz libraries, and few tools that support desktop GUIs.  We’d love to work with people interested in expanding that sort of functionality, to make PyViz truly inclusive.
 
@@ -59,33 +59,33 @@ You can find the [roadmap here] (www.quansight.com/projects)
 
 ---
 
-Q. If I'm the author of a visualization tool, how would I make sure my tool can be integrated into the PyViz stack. What are the hooks for outside contributors to participate?
+**Q.** If I'm the author of a visualization tool, how would I make sure my tool can be integrated into the PyViz stack. What are the hooks for outside contributors to participate?
 
-A. The first thing is that Panel will probably already support it, so if you just put up a Panel and you use Panel.row then you will see what happens.  The worst case will be that a screen representation of the object is displayed, but if your object can display HTML, PNG, Latec or any such thing then it should just work.  If it does not work then you can add those methods to your object.  This process does not require any changes to PyViz or Panel.  For deeper things like HoloViews, it supports matplotlib, Bokeh, and the 3D aspects of Plotly.  
-
----
-
-Q. Does param generates Jupyter widgets?
-
-A. It can through a package called paramMB, which is a param in the notebook.  When you use it with pannel it generates our Bokeh widgets.  With this approach, you can easily move between notebooks and not notebooks and just not worry about it.
+**A.** The first thing is that Panel will probably already support it, so if you just put up a Panel and you use Panel.row then you will see what happens.  The worst case will be that a screen representation of the object is displayed, but if your object can display HTML, PNG, Latec or any such thing then it should just work.  If it does not work then you can add those methods to your object.  This process does not require any changes to PyViz or Panel.  For deeper things like HoloViews, it supports matplotlib, Bokeh, and the 3D aspects of Plotly.  
 
 ---
 
-Q. Is PyViz integrated with IPython widgets? How does an IPython widget user get started with PyViz.
+**Q.** Does param generates Jupyter widgets?
 
-A. If you specifically think about Panel, is it competitive with Dash because it is a way to lay out plots and have widgets on them, but since Dash does not work with a notebook then you would need to look at IPython widgets.  It allows you to lay things out and put widgets on them only in the notebook.  There are some initiatives to try to make them work outside the notebooks but PyViz is the only way to do both things at once today.
-
----
-
-Q. How easy is it to connect PyViz servables with JupyterLab plugins? Also, how do you make your webpages (pyviz.org and panel.pyviz.org)
-
-A. There are actually three contexts, Jupyter Lab, classic Jypiter, and the point servers and it works the same on all three of those.  There is a Jupyter Lab extension that provides two-dimensional communication.  So we have bi-directional communication, either the standalone server or classic Jupyter Notebook.  The key here is whether you can get things back and forth between Python and JavaScript.  We have created all the components at all the levels so everything works.
+**A.** It can through a package called paramMB, which is a param in the notebook.  When you use it with pannel it generates our Bokeh widgets.  With this approach, you can easily move between notebooks and not notebooks and just not worry about it.
 
 ---
 
-Q. What is the best way for those who are new to PyViz to get started?
+**Q.** Is PyViz integrated with IPython widgets? How does an IPython widget user get started with PyViz.
 
-A. Go to pyviz.org and follow the instructions.  
+**A.** If you specifically think about Panel, is it competitive with Dash because it is a way to lay out plots and have widgets on them, but since Dash does not work with a notebook then you would need to look at IPython widgets.  It allows you to lay things out and put widgets on them only in the notebook.  There are some initiatives to try to make them work outside the notebooks but PyViz is the only way to do both things at once today.
+
+---
+
+**Q.** How easy is it to connect PyViz servables with JupyterLab plugins? Also, how do you make your webpages (pyviz.org and panel.pyviz.org)
+
+**A.** There are actually three contexts, Jupyter Lab, classic Jypiter, and the point servers and it works the same on all three of those.  There is a Jupyter Lab extension that provides two-dimensional communication.  So we have bi-directional communication, either the standalone server or classic Jupyter Notebook.  The key here is whether you can get things back and forth between Python and JavaScript.  We have created all the components at all the levels so everything works.
+
+---
+
+**Q.** What is the best way for those who are new to PyViz to get started?
+
+**A.** Go to pyviz.org and follow the instructions.  
 
 ### Footnotes & Links
 

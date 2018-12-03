@@ -3,12 +3,12 @@ layout: post
 title: Episode 7 - GeoViews - Open Source Directions
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bwYldBhYNlw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=s9REOti_vzs&t=729s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Introductions
 
 Welcome to Open Source Directions, the webinar that informs you about the future of open source projects.
-This episode, the project being highlighted is [Intake](https://intake.readthedocs.io/en/latest/index.html)
+This episode, the project being highlighted is [GeoViews](http://geo.holoviews.org/)
 
 * **Host:** Anthony Scopatz
 * **Co-Host:** David Charboneau

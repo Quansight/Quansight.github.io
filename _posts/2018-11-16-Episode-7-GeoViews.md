@@ -3,7 +3,7 @@ layout: post
 title: Episode 7 - GeoViews - Open Source Directions
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=s9REOti_vzs&t=729s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s9REOti_vzs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Introductions
 

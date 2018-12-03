@@ -33,11 +33,11 @@ Clients have always been a big support for this project moving forward.  More br
 
 ### Demo
 
-[Basics of wrapping gridded/tabular/geometry data with projection](http://geoviews.org/user_guide/Projections.html)
-[hvPlot as a simpler entry point](https://hvplot.pyviz.org/user_guide/Geographic_Data.html)
-[Various examples and dashboards](http://geoviews.org/gallery/index.html
-[Glacier Crossfilter App](https://anaconda.org/philippjfr/oggm_glacier-raw/notebook)
-[EarthSim demos, e.g. drawing tools etc.](http://earthsim.pyviz.org/topics/GrabCut.html)
+* [Basics of wrapping gridded/tabular/geometry data with projection](http://geoviews.org/user_guide/Projections.html)
+* [hvPlot as a simpler entry point](https://hvplot.pyviz.org/user_guide/Geographic_Data.html)
+* [Various examples and dashboards](http://geoviews.org/gallery/index.html)
+* [Glacier Crossfilter App](https://anaconda.org/philippjfr/oggm_glacier-raw/notebook)
+* [EarthSim demos, e.g. drawing tools etc.](http://earthsim.pyviz.org/topics/GrabCut.html)
 
 ### Roadmap
 

@@ -30,8 +30,9 @@ with innovative companies and projects.
 
 Quansight was spun from Anaconda in order to facilitate broad community-led
 innovation in Machine-Learning and Data Science. We help our clients gain
-actionable, quantitative insights from their data; we grow talent, build
-technology, and discover new products/services while sustaining open source
+actionable, quantitative insights from their data; we build and connect open
+source communities with companies while developing talent, building
+technology, and discovering new products/services and sustaining open source
 communities. We are Quansight.
 
 ### Contact Us

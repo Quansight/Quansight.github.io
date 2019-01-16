@@ -42,7 +42,7 @@ Without formal governance solidified, there has been nothing formally done with 
 [Delayed](https://mybinder.org/v2/gh/dask/dask-examples/master?urlpath=lab/tree/delayed.ipynb)
 [Surface Sea Ice](http://binder.pangeo.io/v2/gh/pangeo-data/pangeo-example-notebooks/master)
 
-### Rolling Goals
+### Wishlist
 
 1. **Governance:**  This item is pretty early in talks, but there is currently a governance document in the GitHub repository found [here](https://github.com/dask/governance).  As the team has grown, it has become more evident that there would be many benefits to establishing a governance model.  Specifically it is more useful as there are more cooperative efforts with outside organizations.  The first goal is to never need to use the governance but to have a plan just in case, and the second goal is to meet the requirements to become a Numfocus affiliated project.  At the moment there is nothing set in stone here it has mostly just been some beginning discussion.  These discussions are open, and thus the community is encouraged to join in since there is not a lot of experience with this kind of writing within the current group.
 
@@ -64,7 +64,7 @@ Without formal governance solidified, there has been nothing formally done with 
 
 **Q.** The Dask Stream seems a cool visualization tool for tracking computations. Say, if one would have a Python script doing computations (not using dask), would it be possible to visualize the computations using the Dask Stream feature? Say, by wrapping the script main function with Dask or smth?
 
-**A.** Ya, so, the task stream shows computations that Dask knows about.  From a user perspective if you’re trying to write some custom thing you could use Dask-delayed, and we also have a futures interface if you are worried about futures.  Then you would be delegating certain functions to show up in the past stream.  As those are computed, they would show up in the past stream.  
+**A.** The task stream shows computations that Dask knows about.  From a user perspective if you’re trying to write some custom thing you could use Dask-delayed, and we also have a futures interface if you are worried about futures.  Then you would be delegating certain functions to show up in the past stream.  As those are computed, they would show up in the past stream.  
 
 ---
 
@@ -80,7 +80,7 @@ Without formal governance solidified, there has been nothing formally done with 
 
 ### Footnotes & Links
 
-* Roadmap [here](https://github.com/dask/dask-ml/issues?q=is%3Aopen+is%3Aissue+label%3ARoadmap)
+* Wishlist [here](https://github.com/dask/dask-ml/issues?q=is%3Aopen+is%3Aissue+label%3ARoadmap)
 * [Dask Website](https://dask.org/)
 * [GitHub page](https://github.com/dask/dask)
 * [Gitter page](https://gitter.im/dask/dask)

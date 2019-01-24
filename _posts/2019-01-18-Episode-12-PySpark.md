@@ -56,7 +56,7 @@ Building a word counter [demo](https://github.com/jdwittenauer/ipython-notebooks
 
 ---
 
-**Q.** I have experienced in one of my code that when i remove some simple python code from Pyspark code it runs smooth, but along with python it goes for toss, why does that happens ? What’s that weird happens in the back end because of python and pyspark in combined.
+**Q.** I have experienced in one of my code that when i remove some simple python code from PySpark code it runs smooth, but along with python it goes for toss, why does that happens ? What’s that weird happens in the back end because of python and PySpark in combined.
 
 **A.**  There are lots of reasons why this could happen, but the most likely explanation is a serialization problem.  As we were talking about before, PySpark will identify all the things that your function touches and then send those over the network.  When this happens some of the objects become temperamental.  To reiterate, the most common issue here is a serialization error.  There are some tutorials out there, but debugging Spark is one thing that I get paid to do.  Without seeing the error message I just have to assume what the issue actually is.  
 

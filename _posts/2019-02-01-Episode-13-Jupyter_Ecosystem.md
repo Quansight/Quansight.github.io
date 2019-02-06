@@ -13,7 +13,7 @@ This episode, the project being highlighted is [The Jupyter Ecosystem](https://j
 * **Host:** Anthony Scopatz
 * **Co-Host:** David Charboneau
 * **Guest 1:** Carol Willing, is a Jupyter Steering Council member, core developer with a focus on Jupyter's use in learning (over 5 years), and a Python core developer.
-* **Guest 2:** Matthias Bussonnier,  by Day he’s a Research facilitator at the University of California, Merced, and by Night a Pythonista (mostly), and one of the early founders of Jupyter and a core developer of Jupyter as well as IPython.
+* **Guest 2:** Matthias Bussonnier,  by Day he facilitates research at the University of California, Merced, and by Night he is a Pythonista (mostly), and one of the early founders of Jupyter and a core developer of Jupyter as well as IPython.
 
 ### Project Overview
 
@@ -23,7 +23,7 @@ The crux of this project is filling in for Interactive Computing and having Lite
 
 Early on after the switch from IPython notebooks to Jupyter, they did some early tests with the San Diego user group and realized the potential that this project had to make computer science fun.  The simplicity of the software helped contribute to an overall feeling that it was non-intimidating.  Although it was simple, it was also capable of being engaging and doing complex things.  Carol began her exploration of Jupyter with a music theory library, and immediately felt welcomed by the experience.  The hardest thing to get used to is using ‘Shift’+’Enter’.
 
-There are two main areas where other people are working on similar things to Jupyter and the first is UI.  Some of these different UIs are actual competitors.  Some Ide-like competition might be Rstudio, or Spyder.  Some of the notebook like UI competitors might be Zeplin, Nteract, and Colaboratory.  An example of a text editor could be Vim. And one operating systems is Emacs. Keeping all this in mind, it is Important that compatibility is kept with as many things as possible going forward. Jupyter is meant to be seen not only as a default implementation but also a protocol. As long as you implement the protocol, it should function correctly.  You can develop your own custom things because of the way that Jupyter is build around a standard messaging specification designed for communication with a number of front ends.  Furthermore in the scope of sharing things, JupyterHub and Binder are distributed offerings that have been key projects in bringing notebooks to distributed users. One of the nice things about Jupyter’s original architecture is the concept of allowing people to write different custom things for authentication or spinning up notebooks in a particular way.  This has lead to the explosion of things like Colab, Azure notebooks, Amazon Sagemaker as well as Gryd, Paperspace, Digital Ocean, and Pangeo which use the Jupyter Lab technology.
+There are two main areas where other people are working on similar things to Jupyter and the first is UI.  Some of these different UIs are actual competitors.  Some IDE-like competition might be RStudio, or Spyder.  Some of the notebook like UI competitors might be Zeplin, Nteract, and Colaboratory.  An example of a text editor could be Vim. And one operating systems is Emacs. Keeping all this in mind, it is Important that compatibility is kept with as many things as possible going forward. Jupyter is meant to be seen not only as a default implementation but also a protocol. As long as you implement the protocol, it should function correctly.  You can develop your own custom things because of the way that Jupyter is build around a standard messaging specification designed for communication with a number of front ends.  Furthermore in the scope of sharing things, JupyterHub and Binder are distributed offerings that have been key projects in bringing notebooks to distributed users. One of the nice things about Jupyter’s original architecture is the concept of allowing people to write different custom things for authentication or spinning up notebooks in a particular way.  This has lead to the explosion of things like Colab, Azure notebooks, Amazon Sagemaker as well as Gryd, Paperspace, Digital Ocean, and Pangeo which use the Jupyter Lab technology.
 
 The full implementation that Jupyter is built upon is Python, Javascript, Typescript, Tornado, and ZMQ. It is now run with [Python 3](https://python3statement.org/) of course, and just as a reminder to watchers, readers, or listeners, Python 2 EOL is Jan. 1st, 2020.  As far as deployments go, you can deploy Jupyterhub on bear metal but one of the things that really accelerated the adoption of Jupyterhub was Kubernetes and the ability to incorporate ideas from different disciplines. This power combo has encouraged productivity and learning through exploration and interactivity.
 
@@ -40,7 +40,7 @@ To help encourage diversity, they will often take the time to message new commun
 
 ### Demo
 
-[Demo at timestamp 34:13](https://www.youtube.com/watch?v=HzyfFSLfHiQ)
+[Demo at timestamp 34:13](https://youtu.be/HzyfFSLfHiQ?t=2053)
 Jupyter demo [UI selection](https://jupyter.org/try)
 Jupyter yt dev workshop [signup](https://yt-project.org/)
 

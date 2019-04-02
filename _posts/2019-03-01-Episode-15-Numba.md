@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Episode 15 - Numba - Open Source Directions
+author: bsodenkamp
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LmlJcZYpAi0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Episode 17 - TensorFlow - Open Source Directions
+author: bsodenkamp
 ---
 
 <iframe width="1349" height="528" src="https://www.youtube.com/embed/-fiEzhva2ZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

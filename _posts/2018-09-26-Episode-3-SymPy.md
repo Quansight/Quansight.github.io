@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Episode 3 - SymPy - Open Source Directions
+author: bsodenkamp
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OFk3peFF5WQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

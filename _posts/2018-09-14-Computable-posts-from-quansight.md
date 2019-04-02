@@ -4,6 +4,7 @@ layout: post
 modified_date: September 21, 2018
 name: 2018-09-14-Computable-posts-from-quansight
 path: _notebooks
+author: tfast
 ---
 
 At [Quansight](https://www.quansight.com/), we frequently use [Jupyter notebooks](jupyter.org) to communicate our on going contributions to [sustainable open source software](https://www.quansight.com/sos-partnership).  We thought it would be appropriate to compose blog posts with notebooks so they may be read as blog posts with [Jekyll](https://jekyllrb.com) and reused as demos on [Binder](https://mybinder.org/).  For example, this notebook may be run by clicking [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/Quansight/Quansight.github.io/master?filepath=_notebooks%2F2018-09-14-Computable-posts-from-quansight.ipynb).

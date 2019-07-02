@@ -4,7 +4,7 @@ title: Episode 8 - SciPy - Open Source Directions
 author: bsodenkamp
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=t0r6KJwsCBg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t0r6KJwsCBg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Introductions
 

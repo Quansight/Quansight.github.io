@@ -6,8 +6,8 @@ def task_convert():
     return dict(
         file_dep=["index.ipynb"],
         actions=[
-            "jupyter nbconvert --to html --TemplateExporter.exclude_input=True --TemplateExporter.exclude_output_prompt=True index.ipynb",
-            "jupyter nbconvert --to html  --stdout index.ipynb >> developer.html"
+            "jupyter nbconvert --to html --TemplateExporter.exclude_raw=True --TemplateExporter.exclude_input=True --TemplateExporter.exclude_output_prompt=True --LatexExporter.enabled=False index.ipynb",
+            "jupyter nbconvert --to html --TemplateExporter.exclude_raw=False  --stdout index.ipynb > developer.html"
         ],
         targets=["index.html", "developer.html"]
     )

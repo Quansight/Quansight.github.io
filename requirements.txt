@@ -1,5 +1,0 @@
-nbconvert
-GitPython
-PyYAML
-pytest
-importnb

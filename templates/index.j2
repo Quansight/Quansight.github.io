@@ -1,0 +1,122 @@
+{%- extends 'base.j2' -%}
+{% from 'jupyter_widgets.html.j2' import jupyter_widgets %}
+
+{%- block header -%}
+<!DOCTYPE html>
+<html>
+<head>
+{%- block html_head -%}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% set nb_title = nb.metadata.get('title', '') or resources['metadata']['name'] %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Quansight open source community portal</title>
+
+<meta name="description" content="A portal into Quansight and Quansight Labs open source contributions and communities.">
+<meta name="keywords" content="#software #data science">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="🖥️ Quansight open source community portal">
+<meta name="twitter:description" content="A portal into Quansight and Quansight Labs open source contributions and communities.">
+<meta name="twitter:site" content="@Quansighai">
+<meta name="twitter:creator" content="@Quansighai">
+<meta name="twitter:image" content="https://static.wixstatic.com/media/a0b7fa_38c105485a83444a99a8a769667ba1ce~mv2.png/v1/fill/w_365,h_110,al_c,q_85,usm_0.66_1.00_0.01/Qunaight_logo_4.webp">
+
+<!-- Open Graph general (Facebook, Pinterest)-->
+<meta property="og:title" content="🖥️ Quansight open source community portal">
+<meta property="og:description" content="A portal into Quansight and Quansight Labs open source contributions and communities.">
+<meta property="og:url" content="https://quansight.github.io">
+<meta property="og:site_name" content="quansight.github.io">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://static.wixstatic.com/media/a0b7fa_38c105485a83444a99a8a769667ba1ce~mv2.png/v1/fill/w_365,h_110,al_c,q_85,usm_0.66_1.00_0.01/Qunaight_logo_4.webp">
+
+
+<title>Quansight open source community portal</title>
+
+{%- block html_head_js -%}
+{%- block html_head_js_requirejs -%}
+<script src="{{ resources.require_js_url }}"></script>
+{%- endblock html_head_js_requirejs -%}
+{%- endblock html_head_js -%}
+
+{% block jupyter_widgets %}
+  {%- if "widgets" in nb.metadata -%}
+    {{ jupyter_widgets(resources.jupyter_widgets_base_url, resources.html_manager_semver_range) }}
+  {%- endif -%}
+{% endblock jupyter_widgets %}
+
+{% block extra_css %}
+{% endblock extra_css %}
+
+{% for css in resources.inlining.css -%}
+  <style type="text/css">
+    {{ css }}
+  </style>
+{% endfor %}
+
+{% block notebook_css %}
+{{ resources.include_css("static/index.css") }}
+{% if resources.theme == 'dark' %}
+    {{ resources.include_css("static/theme-dark.css") }}
+{% else %}
+    {{ resources.include_css("static/theme-light.css") }}
+{% endif %}
+<style type="text/css">
+a.anchor-link {
+   display: none;
+}
+.highlight  {
+    margin: 0.4em;
+}
+/* Input area styling */
+.jp-InputArea {
+    overflow: hidden;
+}
+.jp-InputArea-editor {
+    overflow: hidden;
+}
+@media print {
+  body {
+    margin: 0;
+  }
+}
+</style>
+
+{% endblock notebook_css %}
+
+{%- block html_head_js_mathjax -%}
+{%- endblock html_head_js_mathjax -%}
+
+{%- block html_head_css -%}
+{%- endblock html_head_css -%}
+
+{%- endblock html_head -%}
+</head>
+{%- endblock header -%}
+
+{%- block body_header -%}
+{% if resources.theme == 'dark' %}
+<body>
+  <main>
+    <article class="jp-Notebook" aria-label="Jupyter notebook" data-jp-theme-light="false" data-jp-theme-name="JupyterLab Dark">
+{% else %}
+<body><main><article class="jp-Notebook" aria-label="Jupyter notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+{% endif %}
+{%- endblock body_header -%}
+
+{% block body_footer %}
+    </article>
+  </main>
+</body>
+{% endblock body_footer %}
+
+{% block footer %}
+{% block footer_js %}
+{% endblock footer_js %}
+{{ super() }}
+</html>
+{% endblock footer %}
